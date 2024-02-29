@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Growth Tracking Project</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        .container { width: 80%; margin: auto; }
+        img { max-width: 100%; height: auto; }
+        .section { margin-bottom: 20px; }
+        h1, h2 { color: #333; }
+        p { color: #666; }
+        .image-example { text-align: center; }
+        .image-example img { margin-top: 10px; }
+        .data-plot { text-align: center; }
+        .data-plot img { margin-top: 10px; width: 60%; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="section">
+            <h1>Introduction</h1>
+            <p>As an enthusiast of indoor gardening, I wanted to track the growth of my potted plants over time to study their health and development. This project aims to measure the growth of plants using a series of time-lapse images.</p>
+            <div class="image-example">
+                <!-- Replace with the actual path to your introduction image -->
+                <img src="C:\Users\Karthik Chowdary\Desktop\comvision\plant 1.webp" alt="Introduction Image">
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Method</h2>
+            <p>The series of images were collected daily at noon to ensure consistent lighting. We utilized YOLO to detect plants in each image and then measured the bounding box dimensions to estimate plant size. These measurements were then plotted to observe growth over time.</p>
+            <div class="section">
+            <h2>Project Documentation</h2>
+            <p>You can view the detailed project report in PDF format here:</p>
+            <a href="C:\Users\Karthik Chowdary\Desktop\comvision\cvi.pdf" target="_blank">View Project PDF</a>
+            
+            <!-- Embedding the PDF -->
+            <iframe src="C:\Users\Karthik Chowdary\Desktop\comvision\cvi.pdf" width="100%" height="500px">
+                <p>Your browser does not support iframes. You can <a href="path_to_your_document.pdf">download the PDF here</a>.</p>
+            </iframe>
+        </div>
+            <div class="image-example">
+                <!-- Replace with the actual path to your method demonstration image -->
+                <img src="C:\Users\Karthik Chowdary\Desktop\comvision\plant 1.webp" alt="Method Example Image">
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Results</h2>
+            <p>Below is the plot showing the growth of the plant over time, with the x-axis representing the sequence of images and the y-axis showing the estimated size of the plant.</p>
+            <div class="data-plot">
+                <!-- Replace with the actual path to your results plot image -->
+                <img src="C:\Users\Karthik Chowdary\Desktop\comvision\1.0.png" alt="Results Plot">
+                <img src="C:\Users\Karthik Chowdary\Desktop\comvision\1.1.png" alt="Results Plot">
+                <img src="C:\Users\Karthik Chowdary\Desktop\comvision\2.0.png" alt="Results Plot">
+                <img src="C:\Users\Karthik Chowdary\Desktop\comvision\2.1.png" alt="Results Plot">
+                <img src="C:\Users\Karthik Chowdary\Desktop\comvision\3.0.png" alt="Results Plot">
+                <img src="C:\Users\Karthik Chowdary\Desktop\comvision\3.1.png" alt="Results Plot">
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Analysis of Results</h2>
+            <p>The plotted data reveals that the plant showed a consistent growth pattern, with an unexpected surge in size during the third week. This anomaly sparked a further investigation into the plant's care routine during that period.</p>
+        </div>
+
+        <div class="section">
+            <h2>Analysis of Vision Algorithms</h2>
+            <p>The YOLO algorithm successfully identified potted plants in 95% of the images. We encountered challenges with low contrast images, which required pre-processing for better plant detection. Adjustments were made to the model's parameters to improve accuracy in subsequent tests.</p>
+        </div>
+    </div>
+</body>
+</html>
